@@ -7,7 +7,7 @@ class Player {
 }
 const myPlayer = new Player('Junaid', 'Khan');
 console.log(myPlayer);
-// //  Public and Private Modifiers
+// //  Public,Protected and  Private Modifiers
 class Persono {
     constructor(first, last) {
         this.first = first;
@@ -20,3 +20,14 @@ console.log(person.first);
 // person.first = 'asdfasdf'
 console.log(person.first);
 // console.log(person.last);
+//  Alternative the The syntax used for parameters used in Class Person
+class me {
+    //  Here No need to Declare Types
+    constructor(first, last) {
+        this.first = first;
+        this.last = last;
+    }
+}
+//  Public => Accessable everywhere
+//  Private => Accessable only in the class Itself
+//  Protected => Accessable only in the class itself and its child
