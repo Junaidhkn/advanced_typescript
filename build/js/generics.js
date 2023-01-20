@@ -9,3 +9,9 @@ const getRandomElement = (item) => {
 };
 console.log(getRandomElement(['12, 23']));
 console.log(getRandomElement([12, 23]));
+//  When Using .tsx use <Type,>(item: Type[]): Type   instead
+//  // With multiple Generic Types
+const merge = (obj, obj1) => {
+    return Object.assign(Object.assign({}, obj), obj1);
+};
+console.log(merge({ name: 'Junaid' }, { age: 22 }));
