@@ -15,3 +15,11 @@ const merge = (obj, obj1) => {
     return Object.assign(Object.assign({}, obj), obj1);
 };
 console.log(merge({ name: 'Junaid' }, { age: 22 }));
+//  Adding Type Constraints
+const mergeObj = (obj, obj1) => {
+    return Object.assign(Object.assign({}, obj), obj1);
+};
+const findLength = (num) => {
+    return num.length;
+};
+console.log(findLength('asddfasdf'));

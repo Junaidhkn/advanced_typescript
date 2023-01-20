@@ -24,3 +24,22 @@ const merge = <T, U>(obj: T, obj1: U) => {
 };
 
 console.log(merge({ name: 'Junaid' }, { age: 22 }));
+
+//  Adding Type Constraints
+
+const mergeObj = <T extends object, U extends object>(obj: T, obj1: U) => {
+	return {
+		...obj,
+		...obj1,
+	};
+};
+
+interface Lengthy {
+	length: number;
+}
+
+const findLength = <T extends Lengthy>(num: T): number => {
+	return num.length;
+};
+
+console.log(findLength('asddfasdf'));
