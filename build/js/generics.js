@@ -23,3 +23,8 @@ const findLength = (num) => {
     return num.length;
 };
 console.log(findLength('asddfasdf'));
+// Default Parameters
+const emptyArr = () => {
+    return [];
+};
+const num = emptyArr();

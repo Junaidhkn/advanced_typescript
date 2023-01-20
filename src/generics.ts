@@ -43,3 +43,11 @@ const findLength = <T extends Lengthy>(num: T): number => {
 };
 
 console.log(findLength('asddfasdf'));
+
+// Default Parameters
+
+const emptyArr = <T = number>(): T[] => {
+	return [];
+};
+
+const num = emptyArr();
