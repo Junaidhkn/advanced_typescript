@@ -25,7 +25,7 @@ const merge = <T, U>(obj: T, obj1: U) => {
 	};
 };
 
-// console.log(merge({ name: 'Junaid' }, { age: 22 }));
+console.log(merge({ name: 'Junaid' }, { age: 22 }));
 
 //  Adding Type Constraints
 
@@ -35,6 +35,8 @@ const mergeObj = <T extends object, U extends object>(obj: T, obj1: U) => {
 		...obj1,
 	};
 };
+
+console.log('Merge OBJ:', mergeObj({ name: 'Junaid' }, { age: 22 }));
 
 interface Lengthy {
 	length: number;
@@ -53,3 +55,10 @@ const emptyArr = <T = number>(): T[] => {
 };
 
 const num = emptyArr();
+
+function loggingIdentity<Type>(arg: Type[]): Type[] {
+	console.log(arg.length);
+	return arg;
+}
+
+console.log(loggingIdentity(['adsfasf']));

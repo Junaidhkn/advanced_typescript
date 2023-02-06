@@ -15,11 +15,12 @@ const getRandomElement = (item) => {
 const merge = (obj, obj1) => {
     return Object.assign(Object.assign({}, obj), obj1);
 };
-// console.log(merge({ name: 'Junaid' }, { age: 22 }));
+console.log(merge({ name: 'Junaid' }, { age: 22 }));
 //  Adding Type Constraints
 const mergeObj = (obj, obj1) => {
     return Object.assign(Object.assign({}, obj), obj1);
 };
+console.log('Merge OBJ:', mergeObj({ name: 'Junaid' }, { age: 22 }));
 const findLength = (num) => {
     return num.length;
 };
@@ -29,3 +30,8 @@ const emptyArr = () => {
     return [];
 };
 const num = emptyArr();
+function loggingIdentity(arg) {
+    console.log(arg.length);
+    return arg;
+}
+console.log(loggingIdentity(['adsfasf']));
