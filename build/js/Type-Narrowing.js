@@ -10,3 +10,16 @@ function makeNoise(pet) {
     }
     return 'Woofff';
 }
+function findArea(shape, value) {
+    switch (shape.kind) {
+        case 'Circle':
+            return 3.475 * value * value;
+        case 'Square':
+            return value * value;
+    }
+}
+const squarie = {
+    kind: 'Square',
+    sideLength: 5,
+};
+console.log(findArea(squarie, squarie.sideLength));
